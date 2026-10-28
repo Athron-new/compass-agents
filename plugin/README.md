@@ -1,8 +1,8 @@
 # compass — COMPASS as a Claude Code plugin
 
-COMPASS is agent memory that knows what still holds: every stored rule says whether it still
-applies, since when, and why. This plugin connects Claude Code to a COMPASS instance in two
-commands.
+COMPASS is the operating layer for companies where people and AI agents work together. Its memory
+knows what still holds: every stored rule says whether it still applies, since when, and why. This
+plugin connects Claude Code to COMPASS in two commands.
 
 ```
 /plugin marketplace add Athron-new/compass-agents
