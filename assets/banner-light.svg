@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400" role="img" aria-labelledby="titel beschr">
+<title id="titel">COMPASS: the operating layer for companies where people and AI agents work together</title>
+<desc id="beschr">Four departments, each with a person and an agent, connected through one shared core of rules, memory and tasks.</desc>
+<defs>
+  <linearGradient id="spek" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7C5CFF"/><stop offset=".5" stop-color="#4C7DFF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  <linearGradient id="spekLinie" gradientUnits="userSpaceOnUse" x1="878" y1="0" x2="1032" y2="0"><stop offset="0" stop-color="#7C5CFF"/><stop offset=".5" stop-color="#4C7DFF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  <linearGradient id="wuerfelL" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#4C7DFF"/></linearGradient>
+  <linearGradient id="wuerfelR" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C7DFF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  <linearGradient id="ausblenden" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F6F8FB" stop-opacity="1"/><stop offset=".55" stop-color="#F6F8FB" stop-opacity=".2"/><stop offset="1" stop-color="#F6F8FB" stop-opacity="0"/></linearGradient>
+</defs>
+<rect width="1280" height="400" fill="#F6F8FB"/>
+<g opacity=".7"><path d="M0 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M64 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M128 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M192 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M256 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M320 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M384 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M448 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M512 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M576 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M640 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M704 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M768 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M832 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M896 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M960 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M1024 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M1088 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M1152 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M1216 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M1280 0V400" stroke="#E3E7ED" stroke-width="1"/><path d="M0 0H1280" stroke="#E3E7ED" stroke-width="1"/><path d="M0 64H1280" stroke="#E3E7ED" stroke-width="1"/><path d="M0 128H1280" stroke="#E3E7ED" stroke-width="1"/><path d="M0 192H1280" stroke="#E3E7ED" stroke-width="1"/><path d="M0 256H1280" stroke="#E3E7ED" stroke-width="1"/><path d="M0 320H1280" stroke="#E3E7ED" stroke-width="1"/><path d="M0 384H1280" stroke="#E3E7ED" stroke-width="1"/></g>
+<rect width="1280" height="400" fill="url(#ausblenden)"/>
+<g transform="translate(72 70) scale(.5)">
+  <polygon points="32,6 54,19 32,32 10,19" fill="#A89BFF"/>
+  <polygon points="10,19 32,32 32,58 10,45" fill="url(#wuerfelL)"/>
+  <polygon points="54,19 32,32 32,58 54,45" fill="url(#wuerfelR)"/>
+</g>
+<text x="112" y="94" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" font-weight="600" letter-spacing="3" fill="#0E1117">COMPASS</text>
+<text x="72" y="148" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="1.6" fill="#4C7DFF">FROM SINGLE-USER MODE TO COMPANY MODE</text>
+<text font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" font-weight="600" letter-spacing="-.8" fill="#0E1117">
+  <tspan x="72" y="200">The operating layer for</tspan>
+  <tspan x="72" y="246">companies where people and</tspan>
+  <tspan x="72" y="292">AI agents work together.</tspan>
+</text>
+<rect x="72" y="318" width="44" height="3" rx="1.5" fill="url(#spek)"/>
+<text x="72" y="350" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#4B5563">People lead. Agents work in every department, by your rules.</text>
+<path d="M870 116 C910.0 116, 910.0 200, 892 200" fill="none" stroke="#CBD2DC" stroke-width="1.5" stroke-dasharray="4 5"/><path d="M1040 116 C995.0 116, 995.0 200, 1008 200" fill="none" stroke="#CBD2DC" stroke-width="1.5" stroke-dasharray="4 5"/><path d="M870 304 C910.0 304, 910.0 200, 892 200" fill="none" stroke="#CBD2DC" stroke-width="1.5" stroke-dasharray="4 5"/><path d="M1040 304 C995.0 304, 995.0 200, 1008 200" fill="none" stroke="#CBD2DC" stroke-width="1.5" stroke-dasharray="4 5"/>
+<path d="M878 100 H1032" fill="none" stroke="url(#spekLinie)" stroke-width="2"/><path d="M1024 94 L1033 100 L1024 106" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="955" y="90" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1" fill="#6B7280">TASK</text>
+<g>
+  <rect x="700" y="70" width="170" height="92" rx="12" fill="#FFFFFF" stroke="#E3E7ED"/>
+  <text x="716" y="98" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E1117">Sales</text>
+  <circle cx="721" cy="122" r="5" fill="#0E1117"/>
+  <text x="734" y="126" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Person</text>
+  <circle cx="721" cy="144" r="5" fill="url(#spek)"/>
+  <text x="734" y="148" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Agent</text>
+</g><g>
+  <rect x="1040" y="70" width="170" height="92" rx="12" fill="#FFFFFF" stroke="#E3E7ED"/>
+  <text x="1056" y="98" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E1117">Accounting</text>
+  <circle cx="1061" cy="122" r="5" fill="#0E1117"/>
+  <text x="1074" y="126" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Person</text>
+  <circle cx="1061" cy="144" r="5" fill="url(#spek)"/>
+  <text x="1074" y="148" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Agent</text>
+</g><g>
+  <rect x="700" y="258" width="170" height="92" rx="12" fill="#FFFFFF" stroke="#E3E7ED"/>
+  <text x="716" y="286" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E1117">Support</text>
+  <circle cx="721" cy="310" r="5" fill="#0E1117"/>
+  <text x="734" y="314" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Person</text>
+  <circle cx="721" cy="332" r="5" fill="url(#spek)"/>
+  <text x="734" y="336" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Agent</text>
+</g><g>
+  <rect x="1040" y="258" width="170" height="92" rx="12" fill="#FFFFFF" stroke="#E3E7ED"/>
+  <text x="1056" y="286" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#0E1117">Engineering</text>
+  <circle cx="1061" cy="310" r="5" fill="#0E1117"/>
+  <text x="1074" y="314" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Person</text>
+  <circle cx="1061" cy="332" r="5" fill="url(#spek)"/>
+  <text x="1074" y="336" font-family="Inter, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" fill="#4B5563">Agent</text>
+</g>
+<g>
+  <circle cx="950" cy="200" r="56" fill="#0E1117"/>
+  <circle cx="950" cy="200" r="47" fill="none" stroke="#9AA3B2" stroke-opacity=".5"/>
+  <path d="M950 164 L958 200 L942 200Z" fill="url(#spek)"/>
+  <path d="M950 236 L942 200 L958 200Z" fill="#9AA3B2"/>
+  <circle cx="950" cy="200" r="3.5" fill="#FFFFFF"/>
+</g>
+<text x="950" y="282" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" letter-spacing="1.2" fill="#6B7280">RULES · MEMORY · TASKS</text>
+</svg>

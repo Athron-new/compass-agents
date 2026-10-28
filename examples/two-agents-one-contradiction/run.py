@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Two agents, one contradiction, one click -- the agents' steps as a script.
 
-Northwind Studio is made up. Its assistant **Sales** writes quotes, **Billing** sends invoices. Neither may set
+Northlight Studio is made up. Its assistant **Sales** writes quotes, **Finance** sends invoices. Neither may set
 a rule; both may propose one. A person confirms with one click. This script plays the two agents with the
 `compass_client` SDK and plays the person with the sign-in of a real person in your project -- you do not have
 to be that person in a browser to see the whole chain.
@@ -73,7 +73,7 @@ def main() -> int:
     host = api.removesuffix("/api/v1")
     mensch = _http(api, "/auth/anmelden", key=key, body={"email": _env("COMPASS_EMAIL"), "passwort": _env("COMPASS_PASSWORT")})
     token = mensch["sitzungs_token"]
-    sales, billing = Compass(host, key, sitzung="sales"), Compass(host, key, sitzung="billing")
+    sales, finance = Compass(host, key, sitzung="sales"), Compass(host, key, sitzung="finance")
     sache = f"payment-terms-{secrets.token_hex(3)}"
 
     def klick(frage_id: int) -> None:
@@ -82,10 +82,10 @@ def main() -> int:
     print(f"Topic: {sache}")
     sales.sache_anlegen(sache, "Payment terms", "When are invoices due?", bereich="unsortiert")
 
-    print("1. Sales proposes a rule. That is a question in the control room, not a rule.")
-    f1 = _vorschlag(api, key, sache, "Invoices are due within 30 days.", "sales", ersetzt=False)
+    print("1. Finance proposes a rule. That is a question in the control room, not a rule.")
+    f1 = _vorschlag(api, key, sache, "Invoices are due within 30 days.", "finance", ersetzt=False)
     try:
-        billing.gilt(sache)
+        finance.gilt(sache)
         print("   !! something already holds -- this must not happen before the click")
         return 1
     except CompassFehler as exc:
@@ -95,25 +95,25 @@ def main() -> int:
     klick(f1)
     time.sleep(1.2)
 
-    print("3. Billing reads what holds.")
-    print(f"   {billing.gilt(sache)['text']!r}")
+    print("3. Sales reads what holds.")
+    print(f"   {sales.gilt(sache)['text']!r}")
     stand_davor = dt.datetime.now(dt.timezone.utc)
     time.sleep(1.2)
 
-    print("4. The team agrees on 14 days. Billing tries to write the rule itself -- and is refused.")
+    print("4. The team agrees on 14 days. Finance tries to write the rule itself -- and is refused.")
     try:
-        billing.regel_setzen(sache, "Invoices are due within 14 days.", angelegt_von="billing")
+        finance.regel_setzen(sache, "Invoices are due within 14 days.", angelegt_von="finance")
         print("   !! the core let an agent set a rule -- this must not happen")
         return 1
     except CompassFehler as exc:
         print(f"   refused: HTTP {exc.status}")
-    print("   So Billing proposes, and says the proposal replaces the current rule.")
-    f2 = _vorschlag(api, key, sache, "Invoices are due within 14 days.", "billing", ersetzt=True)
-    print(f"   still holds: {billing.gilt(sache)['text']!r}")
+    print("   So Finance proposes, and says the proposal replaces the current rule.")
+    f2 = _vorschlag(api, key, sache, "Invoices are due within 14 days.", "finance", ersetzt=True)
+    print(f"   still holds: {finance.gilt(sache)['text']!r}")
 
     print("5. One more click.")
     klick(f2)
-    neu = billing.gilt(sache)["text"]
+    neu = finance.gilt(sache)["text"]
     print(f"   now holds: {neu!r}")
 
     print("6. Ask why -- and ask what held before the second click.")

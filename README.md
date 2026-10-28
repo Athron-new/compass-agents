@@ -1,30 +1,40 @@
 # COMPASS
 
-**Agent memory that knows what still holds.**
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+    <img alt="COMPASS: four departments, each with a person and an agent, connected through one shared core of rules, memory and tasks." src="assets/banner-light.svg" width="100%">
+  </picture>
+</p>
 
-Other memory layers let a model decide in the background what still holds. In COMPASS a person decides, with one click and on the record. Nothing is deleted.
+[Deutsch](README.de.md)
 
-COMPASS is a hosted memory and rulebook for teams that run several AI agents on the same work. Every rule says since when it holds, who decided it, and what it replaced. Agents read the same answer. When something should change, an agent proposes it and a person confirms it.
+**The operating layer for companies where people and AI agents work together.**
 
-> This repository holds the quickstart, examples and our benchmark. The COMPASS service itself is hosted in the EU and is not open source.
+People lead. Agents work in every department, by your rules, with no agenda of their own. Includes agent memory that knows what still holds.
 
-## Why
+> This repository holds the quickstart, examples and how we test our own promises. The COMPASS service itself is hosted in the EU and is not open source.
 
-Monday you tell one assistant that customer Miller has cancelled. Wednesday another assistant sends Miller a new quote. Neither did anything wrong; they just did not share what holds.
+## From single-user mode to company mode
 
-With COMPASS the second assistant looks it up and finds: *Miller cancelled, since Monday, noted by your first assistant.* And if your team changes a rule, the old one is not overwritten. It stays readable as "replaced", with a date and a reason.
+Today everyone works alone with their AI: one person, one assistant, one chat, and every conversation starts from zero. Monday you tell one assistant that a customer has cancelled; Wednesday another assistant sends that customer a new quote.
 
-## What you get
+COMPASS gives your agents the company around them: positions, rules set by people, tasks that move between them, and one memory that knows what still holds. Not one person gets faster. The company does.
 
-- **Rules with a history.** Each rule carries *valid since*, *replaces* and *why*. Ask "what held on 4 September?" and get the answer for that day.
-- **A person decides.** Agents cannot set rules on their own. They propose; you click in the control room; every agent reads the new rule from then on.
-- **Nothing disappears.** A rule is replaced or ended, never deleted. You can always see what held before.
-- **One memory for many agents.** Facts, decisions and lessons, shared with their origin and date.
-- **Any MCP client.** Claude Code, Claude Desktop, claude.ai, Cursor or your own scripts.
+## Five layers
+
+- **Organisation.** Company, positions, and who reports to whom. Every agent has a task, limits and a brief it reads before it starts.
+- **Rules.** A person decides with one click. Agents propose a rule; you confirm it; every agent reads it from then on. Each rule carries *valid since*, *replaces* and *why*, and a rule that changes is replaced, never overwritten.
+- **Work.** Tasks instead of tickets: agents hand work to each other and to people, with status and result.
+- **Knowledge.** Agent memory that knows what still holds: facts, decisions and lessons with origin and date. Ask what held on any past day.
+- **Trust.** Each project is separated in the database itself, every change carries its author, rules only change through a person.
+
+Works with any MCP client: Claude Code, Claude Desktop, claude.ai, Cursor or your own scripts.
 
 ## Quickstart (5 minutes)
 
-1. **Create a free account:** https://compass.athron.io/registrieren
+1. **Create a free account:** https://compass.athron.io/registrieren. Choose *Start with a sample company* to get Northlight Studio, a small shop with three agents, rules and open decisions.
 2. **Connect your client** (sign-in happens in the browser via OAuth):
 
    **Claude Code**
@@ -37,33 +47,31 @@ With COMPASS the second assistant looks it up and finds: *Miller cancelled, sinc
    Settings → Connectors → *Add custom connector* → URL `https://compass.athron.io/mcp` → sign in.
 
 3. **Try it.** Ask your assistant:
-   > "Call `erste_schritte` in COMPASS and show me what is there."
+   > "What holds at Northlight Studio for discounts above 10 %?"
 
-   Then run the example below: [two agents, one contradiction, one click](examples/two-agents-one-contradiction/).
+   Then run the example: [two agents, one contradiction, one click](examples/two-agents-one-contradiction/).
 
 ## Claude Code plugin
-
 ```sh
 /plugin marketplace add Athron-new/compass-agents
 /plugin install compass@compass
 ```
-
 The plugin connects Claude Code to COMPASS, adds a skill that says when to ask COMPASS, loads the briefing of a persona at session start, and rings when the persona's mailbox has something unread. See [`plugin/`](plugin/).
 
 ## Python
+See [`sdk/python/`](sdk/python/) for a small client over the HTTP API. `pip install -e sdk/python` from a checkout.
 
-A small client over the HTTP API: `pip install -e sdk/python` from a checkout. See [`sdk/python/`](sdk/python/).
+## How we test our promises
 
-## Benchmark
-
-We test what we claim. [`bench/`](bench/) describes how we compare COMPASS with other memory layers, what we measured, when, and with which limits. **We publish a number only together with the run that produced it.**
+[`bench/`](bench/) describes how we check that COMPASS does what this page says: that a rule knows what it replaced, that an agent cannot set a rule on its own, and that nothing is deleted. Every result comes with the date and the run that produced it.
 
 ## Security and data
 
-Hosted in the EU. Customers are separated in the database itself. Backups are encrypted. What your agents read from COMPASS goes to the language model you chose for them; that choice is yours. Details: https://athron.io/compass/ · Report a vulnerability: office@athron.io, details in [SECURITY.md](SECURITY.md)
+No AI gets to your data just like that: agents reach it only with a key you issue, and only one project; the database itself blocks everything else. Hosted in the EU, backups encrypted. What your agents read from COMPASS goes to the language model you chose for them; that choice is yours. Report a vulnerability: [SECURITY.md](SECURITY.md)
 
 ## Links
 
 Docs: https://docs.compass.athron.io · Product: https://athron.io/compass/ · Privacy: https://athron.io/privacy.html
 
-*COMPASS is built by ATHRON.*
+*COMPASS is built by ATHRON, with COMPASS. Licensed under MIT (this repository only).*
+
