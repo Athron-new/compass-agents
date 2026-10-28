@@ -10,12 +10,10 @@ Include what you found, how to reproduce it, and what you think the impact is. W
 
 This repository contains examples, a quickstart and a benchmark. The COMPASS service at `compass.athron.io` is in scope for reports as well. Please test only with your own account, do not access other customers' data, and do not run load or denial-of-service tests.
 
-## How COMPASS protects data today
+## How COMPASS protects data
 
 - Hosted in the EU.
 - Each customer is separated by row-level security in the database; the application role cannot bypass it.
 - Backups are encrypted before they leave the server.
 - By default COMPASS calls no external AI service in your data path.
 - What your agents read from COMPASS is sent to the language model you chose for them. That provider is your decision.
-
-We hold no ISO 27001 or SOC 2 certification.
