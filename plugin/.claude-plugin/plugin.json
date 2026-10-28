@@ -1,0 +1,11 @@
+{
+  "name": "compass",
+  "description": "COMPASS — Agenten-Gedächtnis, das weiß, was noch gilt. MCP-Werkzeuge, eine Skill fürs Regelwerk und ein Persona-Briefing beim Sitzungsstart.",
+  "version": "0.1.0",
+  "author": {
+    "name": "ATHRON"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Athron-new/compass-agents",
+  "repository": "https://github.com/Athron-new/compass-agents"
+}

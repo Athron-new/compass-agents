@@ -1,0 +1,13 @@
+{
+  "sache": "bench-template-folder",
+  "frage": "Where do release-note templates live?",
+  "regel": "Rule of 2026-05-10: release-note templates live in docs/templates/.",
+  "ort": "docs/templates/",
+  "wirklichkeit_soll": {"quelle": "rule 2026-05-10", "erwartung": "the folder exists and holds the templates"},
+  "wirklichkeit_ist": {"quelle": "ls docs/templates", "befund": "the folder does not exist; the template sits in docs/README.txt"},
+  "erwartete_abweichung": true,
+  "notiz": "A pointer to a place that is not there. Agents following the rule would look in the wrong place and invent a template.",
+  "pruefweg_befehl": "ls docs/templates",
+  "erwartung": "returncode == 0 and count >= 1",
+  "laufumgebung": "host-ro"
+}

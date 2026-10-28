@@ -1,0 +1,13 @@
+{
+  "sache": "bench-frozen-page",
+  "frage": "Is the deploy runbook still maintained where the handbook says it is?",
+  "regel": "Policy of 2026-04-02: the handbook must not link to read-only pages; runbooks live in the repository.",
+  "ort": "handbook/deploy.md",
+  "wirklichkeit_soll": {"quelle": "policy 2026-04-02", "erwartung": "no link to the old wiki"},
+  "wirklichkeit_ist": {"quelle": "grep wiki.example.invalid handbook/deploy.md", "befund": "the handbook still links to the read-only wiki"},
+  "erwartete_abweichung": true,
+  "notiz": "The rule was followed everywhere except in the one document people actually open.",
+  "pruefweg_befehl": "grep -n wiki.example.invalid handbook/deploy.md",
+  "erwartung": "returncode == 1 and count == 0",
+  "laufumgebung": "host-ro"
+}

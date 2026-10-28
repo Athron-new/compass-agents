@@ -1,0 +1,13 @@
+{
+  "sache": "bench-required-checks",
+  "frage": "How many CI checks block a merge into main?",
+  "regel": "Decision of 2026-06-01: five required checks (unit-tests, lint, build, security-scan, license-check) block a merge into main.",
+  "ort": "ci/required-checks.txt (the file the CI configuration is generated from)",
+  "wirklichkeit_soll": {"quelle": "decision 2026-06-01", "anzahl_required_checks": 5},
+  "wirklichkeit_ist": {"quelle": "ci/required-checks.txt", "anzahl_required_checks": 3},
+  "erwartete_abweichung": true,
+  "notiz": "The rule says five, the file says three. Nothing failed, nobody was told: the stored rule simply stopped being true.",
+  "pruefweg_befehl": "cat ci/required-checks.txt",
+  "erwartung": "returncode == 0 and count == 5",
+  "laufumgebung": "host-ro"
+}

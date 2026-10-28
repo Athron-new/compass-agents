@@ -1,0 +1,10 @@
+# Extends the default rules. The only allowance: three dummy session tokens in an SDK test, named exactly.
+# Anything else that looks like a secret fails the scan.
+[extend]
+useDefault = true
+
+[allowlist]
+description = "dummy session tokens in sdk/python/tests/test_menschen_sitzung.py"
+regexTarget = "line"
+regexes = ['''menschen_sitzung="(sitzungs-token-1|explizit|async-token)"''']
+paths = []

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "compass": {
+      "type": "http",
+      "url": "${COMPASS_MCP_URL}",
+      "headers": {
+        "X-Compass-Key": "${COMPASS_KEY}"
+      }
+    }
+  }
+}

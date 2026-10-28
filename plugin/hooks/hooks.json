@@ -1,0 +1,32 @@
+{
+  "description": "SessionStart: holt den Brief der Persona aus COMPASS_PERSONA, wenn COMPASS_URL/COMPASS_KEY/COMPASS_PERSONA gesetzt sind. Stop: klingelt am Rundenende, wenn im Postfach dieser Persona etwas liegt, UND meldet den Verbrauch dieser Sitzung aus dem Sitzungsprotokoll. Alle drei schweigen ohne vollständige Konfiguration (Exit 0, keine Ausgabe) -- fehlende Konfiguration schliesst, sie oeffnet nicht.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/session_start.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/stop.py\"",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/verbrauch_melden.py\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

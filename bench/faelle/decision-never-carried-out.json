@@ -1,0 +1,13 @@
+{
+  "sache": "bench-key-rotation",
+  "frage": "Were the API keys rotated in October 2026, as decided?",
+  "regel": "Decision of 2026-09-20: rotate all API keys every 90 days; the next rotation is due in October 2026.",
+  "ort": "ops/key-rotation.log",
+  "wirklichkeit_soll": {"quelle": "decision 2026-09-20", "erwartung": "at least one 2026-10 entry in the rotation log"},
+  "wirklichkeit_ist": {"quelle": "ops/key-rotation.log", "befund": "the newest entry is from July"},
+  "erwartete_abweichung": true,
+  "notiz": "A decision that is stored is not a decision that was carried out. The check compares the decision with the world, not with other memories.",
+  "pruefweg_befehl": "grep -n 2026-10 ops/key-rotation.log",
+  "erwartung": "returncode == 0 and count == 1",
+  "laufumgebung": "host-ro"
+}

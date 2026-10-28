@@ -1,0 +1,71 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  sdk:
+    name: sdk (python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e "sdk/python[dev]"
+      - run: python -m pytest sdk/python/tests -q
+
+  plugin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - run: python -m pytest plugin/tests -q
+
+  guard:
+    name: nothing internal, no secret
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - name: the guard finds what it claims to find
+        run: python -m pytest scripts/tests -q
+      - name: scan the tree (placeholders allowed until the repository has its name)
+        run: python scripts/vor_veroeffentlichung.py --erlaube-platzhalter
+      - name: gitleaks over the whole history (the container, so no licence key is needed)
+        run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:latest detect --source /repo --redact
+
+  bench:
+    name: bench cases are well-formed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: five cases, valid JSON, one control
+        run: |
+          python - <<'PY'
+          import glob, json, sys
+          faelle = [json.load(open(f, encoding="utf-8")) for f in sorted(glob.glob("bench/faelle/*.json"))]
+          assert len(faelle) == 5, len(faelle)
+          assert sum(1 for f in faelle if f["erwartete_abweichung"] is False) == 1, "exactly one control case"
+          assert all(f.get("pruefweg_befehl") and f.get("erwartung") for f in faelle)
+          print("ok:", len(faelle), "cases")
+          PY

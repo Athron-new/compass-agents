@@ -1,0 +1,14 @@
+{
+  "name": "compass",
+  "owner": {
+    "name": "ATHRON"
+  },
+  "plugins": [
+    {
+      "name": "compass",
+      "source": "./plugin",
+      "description": "COMPASS — Agenten-Gedächtnis, das weiß, was noch gilt. MCP-Werkzeuge, eine Skill und ein Persona-Briefing beim Sitzungsstart.",
+      "version": "0.1.0"
+    }
+  ]
+}

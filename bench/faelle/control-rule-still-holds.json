@@ -1,0 +1,13 @@
+{
+  "sache": "bench-control",
+  "frage": "Does the rotation log still contain the July rotation?",
+  "regel": "The July rotation of api-prod happened and stays on record.",
+  "ort": "ops/key-rotation.log",
+  "wirklichkeit_soll": {"quelle": "log", "erwartung": "an entry for api-prod on 2026-07-14"},
+  "wirklichkeit_ist": {"quelle": "ops/key-rotation.log", "befund": "the entry is there"},
+  "erwartete_abweichung": false,
+  "notiz": "THE CONTROL. A bench that only contains drift cases cannot tell a check that detects drift from a check that always raises an alarm. This case must come back without a deviation.",
+  "pruefweg_befehl": "grep -n 2026-07-14 ops/key-rotation.log",
+  "erwartung": "returncode == 0 and count == 1",
+  "laufumgebung": "host-ro"
+}
