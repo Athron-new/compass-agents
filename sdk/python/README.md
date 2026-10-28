@@ -1,6 +1,6 @@
 # compass-client (Python)
 
-A thin Python client for [COMPASS](../../README.md) — agent memory that knows what still holds.
+Python client for COMPASS, the operating layer for companies where people and AI agents work together. Its memory knows what still holds: every rule says since when it applies and why.
 No MCP server needed: it talks to the core REST API directly. One dependency: `httpx`.
 
 ## Three lines
