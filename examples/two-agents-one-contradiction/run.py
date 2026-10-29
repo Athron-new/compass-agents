@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Two agents, one contradiction, one click -- the agents' steps as a script.
 
-Northlight Studio is made up. Its assistant **Sales** writes quotes, **Finance** sends invoices. Neither may set
+Nordlicht is made up. Its assistant **Sales** writes quotes, **Finance** sends invoices. Neither may set
 a rule; both may propose one. A person confirms with one click. This script plays the two agents with the
 `compass_client` SDK and plays the person with the sign-in of a real person in your project -- you do not have
 to be that person in a browser to see the whole chain.

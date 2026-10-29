@@ -1,6 +1,6 @@
 # Two agents, one contradiction, one click
 
-*Northlight Studio* is a made-up small shop for sailing gear. Two of its assistants: **Sales** writes quotes, **Finance** sends invoices. Nobody at Northlight is real.
+*Nordlicht* is a made-up small shop for sailing gear. Two of its assistants: **Sales** writes quotes, **Finance** sends invoices. Nobody at Nordlicht is real.
 
 Play this in any MCP client connected to COMPASS, with two chats, one per assistant. Works in an empty project. If you started with the sample company, the payment-terms rule is already there and has a history, so skip to step 3.
 
