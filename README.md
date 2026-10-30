@@ -8,7 +8,7 @@
   </picture>
 </p>
 
-[Deutsch](README.de.md) · Website: **[compassagents.io](https://compassagents.io)**
+<p align="center"><b><a href="https://compassagents.io">Website</a> · <a href="https://docs.compass.athron.io/en/index.html">Docs</a> · <a href="https://docs.compass.athron.io/en/quickstart.html">Get started</a></b> · <a href="README.de.md">Deutsch</a></p>
 
 **The operating layer for companies where people and AI agents work together.**
 
@@ -30,9 +30,13 @@ COMPASS gives your agents the company around them: positions, rules set by peopl
 - **Knowledge.** Agent memory that knows what still holds: facts, decisions and lessons with origin and date. Ask what held on any past day.
 - **Trust.** Each project is separated in the database itself, every change carries its author, rules only change through a person.
 
-Works with any MCP client: Claude Code, Claude Desktop, claude.ai, Cursor or your own scripts.
+How the layers fit together: [Concepts](https://docs.compass.athron.io/en/concepts.html). Setting and replacing a rule step by step: [guide](https://docs.compass.athron.io/en/guides/set-and-supersede-a-rule.html).
+
+Works with any MCP client: Claude Code, Claude Desktop, claude.ai, Cursor or your own scripts. Setup for each client: [Connect Claude Code, Cursor and Codex](https://docs.compass.athron.io/en/guides/connect-clients.html).
 
 ## Quickstart (5 minutes)
+
+The full walkthrough is in the [Quickstart](https://docs.compass.athron.io/en/quickstart.html) of the docs.
 
 1. **Create a free account:** https://compass.athron.io/registrieren. Choose *Start with a sample company* to get Nordlicht, a small shop with three agents, rules and open decisions.
 2. **Connect your client** (sign-in happens in the browser via OAuth):
@@ -56,10 +60,10 @@ Works with any MCP client: Claude Code, Claude Desktop, claude.ai, Cursor or you
 /plugin marketplace add Athron-new/compass-agents
 /plugin install compass@compass
 ```
-The plugin connects Claude Code to COMPASS, adds a skill that says when to ask COMPASS, loads the briefing of a persona at session start, and rings when the persona's mailbox has something unread. See [`plugin/`](plugin/).
+The plugin connects Claude Code to COMPASS, adds a skill that says when to ask COMPASS, loads the briefing of a persona at session start, and rings when the persona's mailbox has something unread. See [`plugin/`](plugin/) and the [MCP tools reference](https://docs.compass.athron.io/en/reference/mcp-tools.html).
 
 ## Python
-See [`sdk/python/`](sdk/python/) for a small client over the HTTP API. `pip install -e sdk/python` from a checkout.
+See [`sdk/python/`](sdk/python/) for a small client over the HTTP API. `pip install -e sdk/python` from a checkout. Docs: [Use the SDKs](https://docs.compass.athron.io/en/guides/use-sdks.html) · [REST API reference](https://docs.compass.athron.io/en/reference/rest.html).
 
 ## How we test our promises
 
@@ -71,7 +75,7 @@ No AI gets to your data just like that: agents reach it only with a key you issu
 
 ## Links
 
-Website: https://compassagents.io · Docs: https://docs.compass.athron.io · Law firms and practices: https://compassagents.io/enterprise.html · Privacy: https://compassagents.io/privacy.html
+Website: https://compassagents.io · Docs: https://docs.compass.athron.io/en/index.html · Law firms and practices: https://compassagents.io/enterprise.html · Privacy: https://compassagents.io/privacy.html
 
 *COMPASS is built by ATHRON, with COMPASS. Licensed under MIT (this repository only).*
 
