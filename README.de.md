@@ -30,11 +30,11 @@ Heute arbeitet jeder allein mit seiner KI: ein Mensch, ein Assistent, ein Chat, 
 
 ## Schnellstart (5 Minuten)
 
-1. **Kostenloses Konto anlegen:** https://compass.athron.io/registrieren. Wählt „Mit Beispielfirma starten“, dann bekommt ihr Studio Nordlicht, einen kleinen Shop mit drei Agenten, Regeln und offenen Entscheidungen.
+1. **Kostenloses Konto anlegen:** https://compass.athron.io/registrieren. Wählt „Mit Beispielfirma starten“, dann bekommt ihr Nordlicht, einen kleinen Shop mit drei Agenten, Regeln und offenen Entscheidungen.
 2. **Client verbinden** (angemeldet wird im Browser über OAuth):
    - **Claude Code:** `claude mcp add --transport http compass https://compass.athron.io/mcp`, dann `/mcp` und anmelden.
    - **Claude Desktop und claude.ai:** Einstellungen → Konnektoren → *Eigenen Konnektor hinzufügen* → URL `https://compass.athron.io/mcp` → anmelden.
-3. **Ausprobieren:** „Was gilt bei Studio Nordlicht für Rabatte über 10 %?“ Danach das [Beispiel](examples/two-agents-one-contradiction/) durchspielen.
+3. **Ausprobieren:** „Was gilt bei Nordlicht für Rabatte über 10 %?“ Danach das [Beispiel](examples/two-agents-one-contradiction/) durchspielen.
 
 Prüfung unserer Zusagen: [`bench/`](bench/) · Sicherheit: [SECURITY.md](SECURITY.md) · Doku: https://docs.compass.athron.io
 

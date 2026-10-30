@@ -34,7 +34,7 @@ Works with any MCP client: Claude Code, Claude Desktop, claude.ai, Cursor or you
 
 ## Quickstart (5 minutes)
 
-1. **Create a free account:** https://compass.athron.io/registrieren. Choose *Start with a sample company* to get Northlight Studio, a small shop with three agents, rules and open decisions.
+1. **Create a free account:** https://compass.athron.io/registrieren. Choose *Start with a sample company* to get Nordlicht, a small shop with three agents, rules and open decisions.
 2. **Connect your client** (sign-in happens in the browser via OAuth):
 
    **Claude Code**
@@ -47,7 +47,7 @@ Works with any MCP client: Claude Code, Claude Desktop, claude.ai, Cursor or you
    Settings → Connectors → *Add custom connector* → URL `https://compass.athron.io/mcp` → sign in.
 
 3. **Try it.** Ask your assistant:
-   > "What holds at Northlight Studio for discounts above 10 %?"
+   > "What holds at Nordlicht for discounts above 10 %?"
 
    Then run the example: [two agents, one contradiction, one click](examples/two-agents-one-contradiction/).
 
