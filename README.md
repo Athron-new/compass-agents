@@ -8,7 +8,7 @@
   </picture>
 </p>
 
-[Deutsch](README.de.md)
+[Deutsch](README.de.md) · Website: **[compassagents.io](https://compassagents.io)**
 
 **The operating layer for companies where people and AI agents work together.**
 
@@ -71,7 +71,7 @@ No AI gets to your data just like that: agents reach it only with a key you issu
 
 ## Links
 
-Docs: https://docs.compass.athron.io · Product: https://athron.io/compass/ · Privacy: https://athron.io/privacy.html
+Website: https://compassagents.io · Docs: https://docs.compass.athron.io · Law firms and practices: https://compassagents.io/enterprise.html · Privacy: https://compassagents.io/privacy.html
 
 *COMPASS is built by ATHRON, with COMPASS. Licensed under MIT (this repository only).*
 

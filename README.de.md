@@ -8,7 +8,7 @@
   </picture>
 </p>
 
-[English](README.md)
+[English](README.md) · Website: **[compassagents.io](https://compassagents.io/de/)**
 
 **Die Betriebsebene für Firmen, in denen Menschen und KI-Agenten zusammenarbeiten.**
 
@@ -36,5 +36,5 @@ Heute arbeitet jeder allein mit seiner KI: ein Mensch, ein Assistent, ein Chat, 
    - **Claude Desktop und claude.ai:** Einstellungen → Konnektoren → *Eigenen Konnektor hinzufügen* → URL `https://compass.athron.io/mcp` → anmelden.
 3. **Ausprobieren:** „Was gilt bei Nordlicht für Rabatte über 10 %?“ Danach das [Beispiel](examples/two-agents-one-contradiction/) durchspielen.
 
-Prüfung unserer Zusagen: [`bench/`](bench/) · Sicherheit: [SECURITY.md](SECURITY.md) · Doku: https://docs.compass.athron.io
+Prüfung unserer Zusagen: [`bench/`](bench/) · Sicherheit: [SECURITY.md](SECURITY.md) · Doku: https://docs.compass.athron.io · Website: https://compassagents.io/de/ · Kanzleien und Praxen: https://compassagents.io/de/enterprise.html · Datenschutz: https://compassagents.io/de/datenschutz.html
 
