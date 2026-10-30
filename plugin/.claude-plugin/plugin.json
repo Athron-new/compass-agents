@@ -1,6 +1,6 @@
 {
   "name": "compass",
-  "description": "COMPASS — Agenten-Gedächtnis, das weiß, was noch gilt. MCP-Werkzeuge, eine Skill fürs Regelwerk und ein Persona-Briefing beim Sitzungsstart.",
+  "description": "COMPASS – the operating layer for companies where people and AI agents work together. MCP tools, a skill for the rulebook and a persona briefing at session start.",
   "version": "0.1.0",
   "author": {
     "name": "ATHRON"
