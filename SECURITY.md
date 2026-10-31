@@ -8,7 +8,7 @@ Include what you found, how to reproduce it, and what you think the impact is. W
 
 ## Scope
 
-This repository contains examples, a quickstart and a benchmark. The COMPASS service at `compass.athron.io` is in scope for reports as well. Please test only with your own account, do not access other customers' data, and do not run load or denial-of-service tests.
+This repository contains examples, a quickstart and a benchmark. The COMPASS service at `app.compassagents.io` (and at its earlier address `compass.athron.io`, which stays active) is in scope for reports as well. Please test only with your own account, do not access other customers' data, and do not run load or denial-of-service tests.
 
 ## How COMPASS protects data
 
