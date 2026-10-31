@@ -11,7 +11,7 @@ Finance (chat 1):
 COMPASS does not store it as a rule yet. A question appears in the control room.
 
 ### 2 · You click
-Open the control room (https://compass.athron.io), find the question and choose the option that makes the rule hold. From now on the rule holds, with your name and the date.
+Open the control room (https://app.compassagents.io), find the question and choose the option that makes the rule hold. From now on the rule holds, with your name and the date.
 
 ### 3 · Sales reads it
 Sales (chat 2):

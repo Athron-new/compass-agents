@@ -42,7 +42,7 @@ def test_ein_sauberer_baum_hat_keinen_fund(tmp_path):
 
 
 def test_die_eigenen_namen_des_herausgebers_sind_erlaubt_fremde_athron_pfade_nicht(tmp_path):
-    ok = "Copyright (c) 2026 Athron.io GmbH, https://compass.athron.io, /plugin marketplace add Athron-new/compass-agents, built by ATHRON, office@athron.io"
+    ok = "Copyright (c) 2026 Athron.io GmbH, https://app.compassagents.io, https://compass.athron.io, /plugin marketplace add Athron-new/compass-agents, built by ATHRON, office@athron.io"
     assert guard.pruefen(_baum(tmp_path, ok), True)[0] == []
     assert any("[kunde]" in f for f in guard.pruefen(_baum(tmp_path, "see Athron-new/athron for it or the internal Athron-new/compass repo"), True)[0])
 
