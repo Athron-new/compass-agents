@@ -43,12 +43,12 @@ The full walkthrough is in the [Quickstart](https://docs.compassagents.io/en/qui
 
    **Claude Code**
    ```sh
-   claude mcp add --transport http compass https://app.compassagents.io/mcp
+   claude mcp add --transport http compass https://compass.athron.io/mcp
    ```
    Then run `/mcp` in Claude Code and sign in.
 
    **Claude Desktop and claude.ai**
-   Settings → Connectors → *Add custom connector* → URL `https://app.compassagents.io/mcp` → sign in.
+   Settings → Connectors → *Add custom connector* → URL `https://compass.athron.io/mcp` → sign in.
 
 3. **Try it.** Ask your assistant:
    > "What holds at Nordlicht for discounts above 10 %?"

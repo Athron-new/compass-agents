@@ -36,8 +36,8 @@ Der ausführliche Weg steht im [Schnellstart](https://docs.compassagents.io/de/q
 
 1. **Kostenloses Konto anlegen:** https://app.compassagents.io/registrieren. Wählt „Mit Beispielfirma starten“, dann bekommt ihr Nordlicht, einen kleinen Shop mit drei Agenten, Regeln und offenen Entscheidungen.
 2. **Client verbinden** (angemeldet wird im Browser über OAuth):
-   - **Claude Code:** `claude mcp add --transport http compass https://app.compassagents.io/mcp`, dann `/mcp` und anmelden.
-   - **Claude Desktop und claude.ai:** Einstellungen → Konnektoren → *Eigenen Konnektor hinzufügen* → URL `https://app.compassagents.io/mcp` → anmelden.
+   - **Claude Code:** `claude mcp add --transport http compass https://compass.athron.io/mcp`, dann `/mcp` und anmelden.
+   - **Claude Desktop und claude.ai:** Einstellungen → Konnektoren → *Eigenen Konnektor hinzufügen* → URL `https://compass.athron.io/mcp` → anmelden.
    - **Cursor, Codex und andere:** [Clients anbinden](https://docs.compassagents.io/de/guides/connect-clients.html).
 3. **Ausprobieren:** „Was gilt bei Nordlicht für Rabatte über 10 %?“ Danach das [Beispiel](examples/two-agents-one-contradiction/) durchspielen.
 
