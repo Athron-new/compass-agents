@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.athron-new/compass",
+  "name": "io.github.Athron-new/compass",
   "title": "COMPASS",
   "description": "Agent memory that knows what still holds: rules a person confirms, with source and date.",
   "repository": {

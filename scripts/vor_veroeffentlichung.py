@@ -36,7 +36,7 @@ REGELN: list[tuple[str, re.Pattern[str], bool]] = [
 ]
 PLATZHALTER = re.compile(r"<ORG>|<REPO>|«[^»]*»")
 # The publisher's own names are not internal data: the company, the product host, the repository.
-ERLAUBT = ("Athron-new/compass-agents", "io.github.athron-new/compass", "athron.io", "Athron.io GmbH", "ATHRON")  # the registry name in server.json is the publisher's own
+ERLAUBT = ("Athron-new/compass-agents", "io.github.Athron-new/compass", "athron.io", "Athron.io GmbH", "ATHRON")  # the registry name in server.json is the publisher's own
 AUSGESCHLOSSEN_VERZEICHNISSE = {".git", "__pycache__", ".pytest_cache", ".venv", "venv"}
 # This file and its test name the patterns on purpose.
 SELBST = {Path("scripts/vor_veroeffentlichung.py"), Path("scripts/tests/test_vor_veroeffentlichung.py")}
